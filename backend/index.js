@@ -21,3 +21,7 @@ app.get("/zenmart", (req, res) => {
 app.listen(3000, () => {
   console.log("starting the server testing !");
 });
+app.listen(3000, () => {
+  console.log("starting the server testing !");
+});
+// dsfsdf

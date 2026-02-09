@@ -11,7 +11,7 @@ app.listen(3000, () => {
   console.log("starting the server testing !");
 });
 
-console.log("09-02-2026");
+console.log("09-02-2026", "starting the server testing !");
 
 app.get("/zenmart", (req, res) => {
   res.send("Hello Zen Mart!");

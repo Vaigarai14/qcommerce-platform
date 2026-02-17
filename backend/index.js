@@ -7,15 +7,7 @@ app.get("/zenmart", (req, res) => {
   console.log("Hello Zen Mart!");
 });
 
-app.listen(3000, () => {
-  console.log("starting the server testing !");
-});
 
-app.listen(3000, () => {
-  console.log("starting the server testing !");
-});
-
-console.log("09-02-2026", "starting the server testing !");
 console.log("09-02-2026", "starting the server testing !");
 
 

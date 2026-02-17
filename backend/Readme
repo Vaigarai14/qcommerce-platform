@@ -1,0 +1,326 @@
+zepto - global search 	
+	profile settings - orders history ,Adresses , edit profile details ,logout , 
+	cart function - cart empty (browser again) , cart design includes (address changeable , coupons , cart 	items list , bill summary , to pay , delivery instructions , delivery partner tip , you might like also 	suggestions , receiver name phone number edit)
+	payment options 
+	- location change - mintues calculated by warehouse distance(km) average travel to delivery
+
+apis
+	list of products 
+	General categories wise - All , cafe , home , toys , fresh , 
+	banners - discount , special offers , special news , special days banners 
+	Buy Again Products list out 
+	Specialized categories , household items , rice , skincare
+	
+	general website details 
+	popular searches 
+	categories text lists 
+	footer banner with details , 
+
+Zepto Warehouse 
+	Near By Warehouse settings warehouse owner credential login 
+	dark store partners with supermarkets and whole sale market such as dmart 4
+
+
+    warehouse - master 
+    product upload - manual , upload , scan 
+    manual - create (brand name , 
+    product name,  product category (cafe , personal things etc), price ,image , quantity , location , created date , updatedate , stock list  )
+
+
+
+# Zenmart – Quick Commerce Platform
+
+A full-stack Quick Commerce (Q-Commerce) web application inspired by Zepto. This platform includes customer ordering, warehouse management, delivery estimation, and product inventory management.
+
+---
+
+# 1. Customer Application Features
+
+## 1.1 Global Search
+- Search products globally across all categories
+- Show:
+  - Popular searches
+  - Suggested products
+  - Category-based results
+
+---
+
+## 1.2 Profile Settings
+
+User profile includes:
+
+- View order history
+- Manage addresses
+- Edit profile details
+- Logout functionality
+
+---
+
+## 1.3 Cart Functionality
+
+### Cart Persistence
+- Cart should remain saved even after browser refresh or reopening
+
+### Cart Components
+
+Cart design includes:
+
+- Address selection and change option
+- Coupons application
+- Cart items list
+- Bill summary:
+  - Item total
+  - Delivery charge
+  - Discount
+  - Final amount (To Pay)
+- Delivery instructions input
+- Delivery partner tip option
+- Suggested products ("You might also like")
+- Receiver details:
+  - Receiver name (editable)
+  - Phone number (editable)
+
+---
+
+## 1.4 Payment Options
+
+Support multiple payment methods:
+
+- UPI
+- Credit/Debit Card
+- Net Banking
+- Cash on Delivery
+- Wallets
+
+---
+
+## 1.5 Location and Delivery Time Calculation
+
+Features:
+
+- Change delivery location
+- Delivery time calculated based on:
+
+
+Factors:
+
+- Nearest warehouse selection
+- Distance between warehouse and delivery location
+- Real-time availability
+
+---
+
+# 2. APIs Required
+
+## 2.1 Product APIs
+
+### Get all products
+- List all products
+
+### Get products by category
+
+Categories include:
+
+- All
+- Cafe
+- Home
+- Toys
+- Fresh
+- Household
+- Rice
+- Skincare
+
+---
+
+### Buy Again API
+
+- Show previously purchased products
+
+---
+
+### Specialized Category API
+
+- Household items
+- Skincare
+- Grocery
+- Personal care
+
+---
+
+## 2.2 Banner APIs
+
+Banner types:
+
+- Discount banners
+- Special offer banners
+- Special news banners
+- Festival / Special day banners
+
+---
+
+## 2.3 Website Metadata APIs
+
+Includes:
+
+- General website information
+- Popular searches
+- Categories list
+- Footer details
+- Footer banner content
+
+---
+
+# 3. Warehouse Management System (Dark Store)
+
+Warehouse system used by warehouse owners and partners.
+
+---
+
+## 3.1 Warehouse Authentication
+
+Warehouse owner login:
+
+- Email / Username
+- Password authentication
+
+Warehouse partners include:
+
+- Supermarkets
+- Wholesale markets
+- Dark stores
+- Example: Dmart partner warehouse
+
+---
+
+## 3.2 Nearby Warehouse Settings
+
+Features:
+
+- Detect nearest warehouse
+- Assign warehouse based on delivery location
+- Warehouse distance calculation
+
+---
+
+## 3.3 Warehouse Master Module
+
+Warehouse details include:
+
+- Warehouse ID
+- Warehouse Name
+- Location
+- Partner Name
+- Created Date
+- Updated Date
+
+---
+
+# 4. Product Management (Warehouse Side)
+
+Warehouse can manage products using:
+
+## 4.1 Manual Product Creation
+
+Fields:
+
+- Brand name
+- Product name
+- Product category
+- Price
+- Product image
+- Quantity
+- Warehouse location
+- Created date
+- Updated date
+- Stock quantity
+
+---
+
+## 4.2 Bulk Upload
+
+- Upload products via file (CSV / Excel)
+
+---
+
+## 4.3 Scan Upload
+
+- Add product using barcode / QR scan
+
+---
+
+## 4.4 Stock Management
+
+Features:
+
+- Update stock quantity
+- View stock list
+- Track stock availability
+- Low stock alert
+
+---
+
+# 5. Core System Modules Overview
+
+| Module | Description |
+|------|-------------|
+| Customer App | Browse products, cart, order, payment |
+| Profile System | User profile, orders, address management |
+| Cart System | Persistent cart with billing and suggestions |
+| Payment System | Multiple payment integrations |
+| Warehouse System | Product and inventory management |
+| Product API | Product listing, categories, search |
+| Banner System | Dynamic marketing banners |
+| Location System | Warehouse selection and delivery calculation |
+
+---
+
+# 6. Future Enhancements
+
+Possible improvements:
+
+- Real-time delivery tracking
+- Delivery partner app
+- Admin dashboard
+- Analytics dashboard
+- AI product recommendations
+- Push notifications
+
+---
+
+# 7. Technology Stack (Recommended)
+
+## Frontend
+- React.js
+- Next.js
+- Tailwind CSS
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- MongoDB
+
+## Storage
+- AWS S3 / Cloudinary (images)
+
+## Authentication
+- JWT
+
+---
+
+# 8. Architecture Overview
+
+
+
+---
+
+# 9. Primary Goal
+
+Build a production-level Quick Commerce platform demonstrating:
+
+- Full frontend architecture
+- Real-world backend system
+- Warehouse management
+- Inventory management
+- Scalable system design

@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model product {
+  productId      Int             @id @default(autoincrement())
+  productName    String          @unique
+  price          Float?
+  quantity       Int             @default(0)
+  imageUrl       String?
+  productCatId   Int
+  productCatName productCategory @relation(fields: [productCatId], references: [productCatID])
+}
+
+model productCategory {
+  productCatID  Int       @id @default(autoincrement())
+  produtCatname String?
+  productArr    product[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  authorId  Int
+  author    User    @relation(fields: [authorId], references: [id])
+}
